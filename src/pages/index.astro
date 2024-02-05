@@ -1,88 +1,138 @@
 ---
-import Carrusel from "../components/carrusel"
+import Carrusel from "../components/carrusel";
 import ProductsCard from "../components/ProductsCard.astro";
-import NavBar from "../components/navBar"
+import NavBar from "../components/navBar";
+import { Image } from "@nextui-org/react";
+import Whatsapp from "../components/whatsapContact.astro";
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/x-png" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width" />
-		<meta name="description" content="Años de experencia en la venta de material para la contruccion, principales vendedores de ladrillo en mendoza">
-		<meta name="keywords" content="mendoza, ladrillos, empresa, envios">
+		<meta
+			name="description"
+			content="Años de experencia en la venta de material para la contruccion, principales vendedores de ladrillo en mendoza"
+		/>
+		<meta name="keywords" content="mendoza, ladrillos, empresa, envios" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Ladrillera Basile</title>
 	</head>
 	<body>
-
-		<div class="h-[8vh] w-full bg-[#ea580c] flex items-center justify-between px-10">
-			<div class="flex gap-2 items-center">
-				<a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSHxjNTQWLkhmZvtgNzCTWDzRftQsjGFqJWHSBHmXhQVVqDgJHMkcxCdwGmjcmWLnHGTWjnG" target="_blank" class="text-sm">info@ladrilerabasile.com.ar</a>
-				<span class="text-white"> - </span>
-				<p class="text-white text-sm">tel: 261 597 6975</p>
-			</div>
-			<dir class="flex gap-2 align-middle">
-				<a href="http://www.instagram.com/ladrillerabasile/" target="_blank">
-					<img src="/instagramIcon.png" alt="icon" width={20}>
-				</a>
-				<a href="http://www.facebook.com/ladrillerabasile" target="_blank">
-					<img src="/facebookIcon.png" alt="icon" width={18}>
-				</a>
-			</dir>
-		</div>
-		
-
 		<NavBar client:load />
-    
+
 		<main class="flex gap-10 flex-col overflow-hidden">
-			
-			<Carrusel client:load/>
+			<Carrusel client:load />
 			<section id="quienesSomos" class="px-10 pt-40">
 				<h4>¿Quienes somos?</h4>
-				<p  class="mt-10">Ladrillera Basile es la marca de una empresa dedicada a la comercialización en el área de la construcción de variedades de ladrillos y de ladrillones; y a la comercialización de carbonilla. La actividad se inició en el año 1982, con José Luis Basile. Comenzó a trabajar en un pequeño terreno que había recibido como herencia en la zona definida hasta el día de hoy como la mejor tierra para la fabricación de la arcilla que compone los productos principales de esta empresa. En 1994, se suma a este trabajo su hijo Gonzalo, que al día de hoy está a cargo de la gestión estratégica de la empresa. Ladrillera Basile fue la primera empresa en implementar el sistema de hidrogrúas para el traslado y entrega de palet de ladrillos y ladrillones macizos en la Región de Cuyo, en el año 1998. Este sistema de entrega permite ahorrar tiempo de descarga, disminuye roturas en el producto, evita accidentes, permite un mejor ordenamiento del material en las obras ocupando un espacio mínimo y hace posible elevar el palet a 14m de altura; y es ahora uno de los servicios más requeridos por nuestros clientes. Luego de más de 30 años en el mercado, esta empresa familiar ha logrado mantenerse y ser reconocida por su trayectoria, responsabilidad y cumplimiento. Después de una incansable labor, Ladrillera Basile se ha posicionado como la comercializadora de ladrillos y ladrillones macizos más importante del mercado de la Región de Cuyo con un equipo de trabajo que se complementa en todas sus funciones y una amplia cartera de clientes conformada por reconocidas empresas constructoras, corralones, arquitectos, ingenieros, maestros mayores de obras y particulares acompañando este camino.</p>
+				<p class="mt-10">
+					Ladrillera Basile es la marca de una empresa dedicada a la
+					comercialización en el área de la construcción de variedades de
+					ladrillos y de ladrillones; y a la comercialización de carbonilla. La
+					actividad se inició en el año 1982, con José Luis Basile. Comenzó a
+					trabajar en un pequeño terreno que había recibido como herencia en la
+					zona definida hasta el día de hoy como la mejor tierra para la
+					fabricación de la arcilla que compone los productos principales de
+					esta empresa. En 1994, se suma a este trabajo su hijo Gonzalo, que al
+					día de hoy está a cargo de la gestión estratégica de la empresa.
+					Ladrillera Basile fue la primera empresa en implementar el sistema de
+					hidrogrúas para el traslado y entrega de palet de ladrillos y
+					ladrillones macizos en la Región de Cuyo, en el año 1998. Este sistema
+					de entrega permite ahorrar tiempo de descarga, disminuye roturas en el
+					producto, evita accidentes, permite un mejor ordenamiento del material
+					en las obras ocupando un espacio mínimo y hace posible elevar el palet
+					a 14m de altura; y es ahora uno de los servicios más requeridos por
+					nuestros clientes. Luego de más de 30 años en el mercado, esta empresa
+					familiar ha logrado mantenerse y ser reconocida por su trayectoria,
+					responsabilidad y cumplimiento. Después de una incansable labor,
+					Ladrillera Basile se ha posicionado como la comercializadora de
+					ladrillos y ladrillones macizos más importante del mercado de la
+					Región de Cuyo con un equipo de trabajo que se complementa en todas
+					sus funciones y una amplia cartera de clientes conformada por
+					reconocidas empresas constructoras, corralones, arquitectos,
+					ingenieros, maestros mayores de obras y particulares acompañando este
+					camino.
+				</p>
 			</section>
-	
 
 			<section id="productos" class="pt-40">
 				<h4>Productos</h4>
-				<ProductsCard/>
-			</section>
-			
-			<section class="bg-gray-600 h-[40vh] w-full">
-				<h4>contacto de la empresa</h4>
+				<ProductsCard />
 			</section>
 
+			<section id="puntosdeventa" class="pt-40">
+				<h4 class="">Puntos de venta</h4>
+				<div class="flex justify-around mt-10 flex-wrap gap-5f">
+					<div>
+						<h6 class="mb-2 text-center text-lg font-bold">
+							Centro comercial ARGA
+						</h6>
+						<Image
+							src="/foto-arga-entrada.jpg"
+							alt="Arga"
+							width={500}
+							client:load
+						/>
+					</div>
+					<div>
+						<h6 class="mb-2 text-center text-lg font-bold">
+							Oficinas Algarrobal
+						</h6>
+						<Image
+							src="/foto-arga-entrada.jpg"
+							alt="Algarrobal"
+							width={500}
+							client:load
+						/>
+					</div>
+				</div>
+			</section>
+			<div class="fixed bottom-5 right-5 z-10">
+				<Whatsapp />
+			</div>
 		</main>
 
+		<footer
+			class="h-40 w-full bg-[#ea580c] flex items-center justify-between px-10 mt-10"
+		>
+			<div class="">
+				<a
+					href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSHxjNTQWLkhmZvtgNzCTWDzRftQsjGFqJWHSBHmXhQVVqDgJHMkcxCdwGmjcmWLnHGTWjnG"
+					target="_blank"
+					class="text-sm">info@ladrilerabasile.com.ar</a
+				>
+				<p class="text-white text-sm">tel: 261 597 6975</p>
+			</div>
+			<dir class="flex gap-2 align-middle"> </dir>
+		</footer>
 	</body>
 </html>
 
-
 <style>
-	nav{
+	nav {
 		background: #222;
 	}
 
-	a{
-		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	a {
+		font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+			"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 		font-weight: 500;
 		cursor: pointer;
 		color: #fff;
 	}
 
-	h1{
+	h1 {
 		font-family: Roboto;
 		font-weight: 800;
 		color: #fefefe;
 	}
-	h4{
+	h4 {
 		font-size: 1.875rem;
 		line-height: 2.25rem;
 		text-align: center;
 		text-decoration-line: underline;
 		text-underline-offset: 20px;
 		text-decoration-color: #ea580c;
-
 	}
 </style>
