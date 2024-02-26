@@ -21,11 +21,11 @@ export default function Carrusel() {
       <img className='w-full shadow-sm' src={"/carruzel/" + img.toString() + ".jpg"} alt="banner" />
 
       <button className='group-hover:translate-x-[80px] transition ease-in duration-150 absolute top-1/2 left-[-50px] bg-white p-3 rounded-sm' onClick={() => img > 1 ? setImg(img - 1) : setImg(5)}>
-        <img src="/backward-solid.svg" alt="Desplazar izquierda" />
+        <img src="ladrillera-basile/backward-solid.svg" alt="Desplazar izquierda" />
       </button>
 
       <button className='group-hover:translate-x-[-80px] transition ease-in duration-150  absolute top-1/2 right-[-50px] bg-white p-3 rounded-sm' onClick={() => img < 5 ? setImg(img + 1) : setImg(1)}>
-        <img src="/forward-solid.svg" alt="Desplazar" />
+        <img src="/ladrillera-basile/forward-solid.svg" alt="Desplazar" />
       </button>
 
     </section>
