@@ -1,5 +1,5 @@
 import React from "react";
-import {Navbar, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, NavbarBrand, NavbarContent, NavbarItem, Link} from "@nextui-org/react";
+import { Navbar, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, NavbarBrand, NavbarContent, NavbarItem, Link } from "@nextui-org/react";
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -11,11 +11,11 @@ export default function NavBar() {
     },
     {
       title: "Productos",
-      url:"#productos"
+      url: "#productos"
     },
     {
       title: "Puntos de venta",
-      url:"#puntosdeventa"
+      url: "#puntosdeventa"
     }
   ];
 
@@ -27,7 +27,7 @@ export default function NavBar() {
           className="md:hidden text-white"
         />
         <NavbarBrand>
-          <img src="http://www.ladrillerabasile.com.ar/images/logo.png" className="h-10 lg:h-16"/>
+          <img src="/logo.png" className="h-10 lg:h-16" />
         </NavbarBrand>
       </NavbarContent>
 
@@ -66,7 +66,7 @@ export default function NavBar() {
               className="w-full"
               href={item.url}
               size="lg"
-              onClick={()=> {setIsMenuOpen(false)}}
+              onClick={() => { setIsMenuOpen(false) }}
             >
               {item.title}
             </Link>

@@ -18,7 +18,7 @@ export default function Carrusel() {
 
   return (
     <section className='group relative h-full w-full mx-auto box-border'>
-      <img className='w-full shadow-sm' src={"/" + img.toString() + ".jpg"} alt="banner" />
+      <img className='w-full shadow-sm' src={"/carruzel/" + img.toString() + ".jpg"} alt="banner" />
 
       <button className='group-hover:translate-x-[80px] transition ease-in duration-150 absolute top-1/2 left-[-50px] bg-white p-3 rounded-sm' onClick={() => img > 1 ? setImg(img - 1) : setImg(5)}>
         <img src="/backward-solid.svg" alt="Desplazar izquierda" />
