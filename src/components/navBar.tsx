@@ -27,7 +27,7 @@ export default function NavBar() {
           className="md:hidden text-white"
         />
         <NavbarBrand>
-          <img src="/logo.png" className="h-10 lg:h-16" />
+          <img src="/ladrillera-basile/logo.png" className="h-10 lg:h-16" />
         </NavbarBrand>
       </NavbarContent>
 
@@ -49,12 +49,12 @@ export default function NavBar() {
         </NavbarItem>
         <NavbarItem>
           <a href="http://www.instagram.com/ladrillerabasile/" target="_blank">
-            <img src="/instagramIcon.png" alt="icon" width={20} />
+            <img src="/ladrillera-basile/instagramIcon.png" alt="icon" width={20} />
           </a>
         </NavbarItem>
         <NavbarItem>
           <a href="http://www.facebook.com/ladrillerabasile" target="_blank">
-            <img src="/facebookIcon.png" alt="icon" width={18} />
+            <img src="/ladrillera-basile/facebookIcon.png" alt="icon" width={18} />
           </a>
         </NavbarItem>
       </NavbarContent>
