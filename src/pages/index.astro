@@ -4,12 +4,13 @@ import ProductsCard from "../components/ProductsCard.astro";
 import NavBar from "../components/navBar";
 import { Image } from "@nextui-org/react";
 import Whatsapp from "../components/whatsapContact.astro";
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/x-png" href="/favicon.png" />
+		<link rel="icon" type="image/x-png" href={baseUrl + "favicon.png"} />
 		<meta name="viewport" content="width=device-width" />
 		<meta
 			name="description"
@@ -69,7 +70,7 @@ import Whatsapp from "../components/whatsapContact.astro";
 							Centro comercial ARGA
 						</h6>
 						<Image
-							src="/foto-arga-entrada.jpg"
+							src={baseUrl + "foto-arga-entrada.jpg"}
 							alt="Arga"
 							width={500}
 							client:load
@@ -80,7 +81,7 @@ import Whatsapp from "../components/whatsapContact.astro";
 							Oficinas Algarrobal
 						</h6>
 						<Image
-							src="/foto-arga-entrada.jpg"
+							src={baseUrl + "foto-arga-entrada.jpg"}
 							alt="Algarrobal"
 							width={500}
 							client:load
