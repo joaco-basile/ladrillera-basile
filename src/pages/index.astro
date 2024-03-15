@@ -1,5 +1,5 @@
 ---
-import Carrusel from "../components/carrusel";
+import Carrusel from "../components/carrusel.astro";
 import ProductsCard from "../components/ProductsCard.astro";
 import NavBar from "../components/navBar";
 import { Image } from "@nextui-org/react";
@@ -23,7 +23,7 @@ import Whatsapp from "../components/whatsapContact.astro";
 		<NavBar client:load />
 
 		<main class="flex gap-10 flex-col overflow-hidden">
-			<Carrusel client:load />
+			<Carrusel />
 			<section id="quienesSomos" class="px-10 pt-40">
 				<h4>¿Quienes somos?</h4>
 				<p class="mt-10">

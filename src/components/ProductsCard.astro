@@ -1,18 +1,22 @@
 ---
-import { ladrillosData } from "./ladrillosData";
-
+import { LadrillosData } from "./ladrillosData";
 ---
+
 <div class="mt-10 w-full p-5 grid justify-center gap-5 w">
   {
-    ladrillosData.map(ladrillo => (
+    LadrillosData.map((ladrillo) => (
       <div class="transition ease-in-out delay-150 hover:translate-y-[-10px] relative w-[350px] p-4 rounded-md shadow-md">
         <div>
-          <img class="mx-auto" src={ladrillo.imageURl} alt="imagen ladrillo" height={250} width={250} />
+          <img
+            class="mx-auto"
+            src={ladrillo.imageURl}
+            alt="imagen ladrillo"
+            height={250}
+            width={250}
+          />
         </div>
         <div class="mt-2 ">
-          <h6 class="font-bold text-lg">
-            {ladrillo.name}
-          </h6>
+          <h6 class="font-bold text-lg">{ladrillo.name}</h6>
           <p class="text-xs font-bold">Peso: {ladrillo.weight}Kg</p>
           <p class="text-xs font-bold">{ladrillo.description}</p>
         </div>
@@ -22,7 +26,7 @@ import { ladrillosData } from "./ladrillosData";
 </div>
 
 <style>
-  div{
+  div {
     grid-template-columns: repeat(auto-fill, 350px);
   }
 </style>

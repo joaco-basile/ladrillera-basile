@@ -1,11 +1,11 @@
-interface ladrilloData{
+interface ladrilloData {
   name: string
   weight: number
   description: string
   imageURl: string
 }
 
-export const ladrillosData: ladrilloData[] = [
+export const LadrillosData: ladrilloData[] = [
   {
     name: "Ladrillon comun",
     weight: 23,
