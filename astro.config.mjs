@@ -5,6 +5,5 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), react()],
-  site: 'https://joaco-basile.github.io',
-  base: '/ladrillera-basile'
+  site: 'https://joaco-basile.github.io'
 });

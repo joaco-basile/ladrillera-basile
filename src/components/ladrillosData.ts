@@ -1,64 +1,18 @@
-interface ladrilloData{
+interface ladrilloData {
   name: string
   weight: number
+  high: number
   description: string
   imageURl: string
 }
 
-export const ladrillosData: ladrilloData[] = [
+export const LadrillosData: ladrilloData[] = [
   {
-    name: "Ladrillon comun",
-    weight: 23,
-    description: "Este ladrillo se utiliza en la mayoria de los casos",
-    imageURl: "http://www.ladrillerabasile.com.ar/images/productos/1-ladrillon-17.jpg",
-  },
-  {
-    name: "Ladrillon de segunda",
-    weight: 23,
-    description: "Este ladrillo tiene las mismas medidas que el ladrillon comun pero con una menor calidad",
-    imageURl: "http://www.ladrillerabasile.com.ar/images/productos/2-ladrillon-20.jpg",
-  },
-  {
-    name: "Ladrillon de segunda",
-    weight: 23,
-    description: "Este ladrillo tiene las mismas medidas que el ladrillon comun pero con una menor calidad",
-    imageURl: "http://www.ladrillerabasile.com.ar/images/productos/2-ladrillon-20.jpg",
-  },
-  {
-    name: "Ladrillon de segunda",
-    weight: 23,
-    description: "Este ladrillo tiene las mismas medidas que el ladrillon comun pero con una menor calidad",
-    imageURl: "http://www.ladrillerabasile.com.ar/images/productos/2-ladrillon-20.jpg",
-  },
-  {
-    name: "Ladrillon de segunda",
-    weight: 23,
-    description: "Este ladrillo tiene las mismas medidas que el ladrillon comun pero con una menor calidad",
-    imageURl: "http://www.ladrillerabasile.com.ar/images/productos/2-ladrillon-20.jpg",
-  },
-  {
-    name: "Ladrillon de segunda",
-    weight: 23,
-    description: "Este ladrillo tiene las mismas medidas que el ladrillon comun pero con una menor calidad",
-    imageURl: "http://www.ladrillerabasile.com.ar/images/productos/2-ladrillon-20.jpg",
-  },
-  {
-    name: "Ladrillon de segunda",
-    weight: 23,
-    description: "Este ladrillo tiene las mismas medidas que el ladrillon comun pero con una menor calidad",
-    imageURl: "http://www.ladrillerabasile.com.ar/images/productos/2-ladrillon-20.jpg",
-  },
-  {
-    name: "Ladrillon de segunda",
-    weight: 23,
-    description: "Este ladrillo tiene las mismas medidas que el ladrillon comun pero con una menor calidad",
-    imageURl: "http://www.ladrillerabasile.com.ar/images/productos/2-ladrillon-20.jpg",
-  },
-  {
-    name: "Ladrillon de segunda",
-    weight: 23,
-    description: "Este ladrillo tiene las mismas medidas que el ladrillon comun pero con una menor calidad",
-    imageURl: "http://www.ladrillerabasile.com.ar/images/productos/2-ladrillon-20.jpg",
+    name: "Ladrillon de 17",
+    weight: 1,
+    high: 1,
+    description: "Este ladrillo se para la construccion de casa o edificios y tiene la más alta calidad",
+    imageURl: "/products_images/Ladrillon_de_17.png",
   },
 
 ]

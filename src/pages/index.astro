@@ -1,5 +1,5 @@
 ---
-import Carrusel from "../components/carrusel";
+import Carrusel from "../components/carrusel.astro";
 import ProductsCard from "../components/ProductsCard.astro";
 import NavBar from "../components/navBar";
 import { Image } from "@nextui-org/react";
@@ -23,7 +23,7 @@ import Whatsapp from "../components/whatsapContact.astro";
 		<NavBar client:load />
 
 		<main class="flex gap-10 flex-col overflow-hidden">
-			<Carrusel client:load />
+			<Carrusel />
 			<section id="quienesSomos" class="px-10 pt-40">
 				<h4>¿Quienes somos?</h4>
 				<p class="mt-10">
@@ -69,7 +69,7 @@ import Whatsapp from "../components/whatsapContact.astro";
 							Centro comercial ARGA
 						</h6>
 						<Image
-							src="/ladrillera-basile/foto-arga-entrada.jpg"
+							src="/foto-arga-entrada.jpg"
 							alt="Arga"
 							width={500}
 							client:load
@@ -80,7 +80,7 @@ import Whatsapp from "../components/whatsapContact.astro";
 							Oficinas Algarrobal
 						</h6>
 						<Image
-							src="/ladrillera-basile/foto-arga-entrada.jpg"
+							src="/foto-arga-entrada.jpg"
 							alt="Algarrobal"
 							width={500}
 							client:load
