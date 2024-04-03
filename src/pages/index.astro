@@ -2,8 +2,9 @@
 import Carrusel from "../components/carrusel.astro";
 import ProductsCard from "../components/ProductsCard.astro";
 import NavBar from "../components/navBar";
-import { Image } from "@nextui-org/react";
 import Whatsapp from "../components/whatsapContact.astro";
+import Presupuestador from "../components/presupuestador";
+
 const baseUrl = import.meta.env.BASE_URL;
 ---
 
@@ -25,6 +26,8 @@ const baseUrl = import.meta.env.BASE_URL;
 
 		<main class="flex gap-10 flex-col overflow-hidden">
 			<Carrusel />
+
+			<!-- Quienes somos -->
 			<section id="quienesSomos" class="px-10 pt-40">
 				<h4>¿Quienes somos?</h4>
 				<p class="mt-10">
@@ -57,38 +60,41 @@ const baseUrl = import.meta.env.BASE_URL;
 				</p>
 			</section>
 
+			<!-- products cards -->
 			<section id="productos" class="pt-40">
 				<h4>Productos</h4>
 				<ProductsCard />
 			</section>
 
+			<!-- puntos de ventas -->
 			<section id="puntosdeventa" class="pt-40">
 				<h4 class="">Puntos de venta</h4>
-				<div class="flex justify-around mt-10 flex-wrap gap-5f">
+				<div class="flex justify-around mt-10 flex-wrap gap-5">
 					<div>
 						<h6 class="mb-2 text-center text-lg font-bold">
 							Centro comercial ARGA
 						</h6>
-						<Image
+						<img
 							src={baseUrl + "foto-arga-entrada.jpg"}
 							alt="Arga"
 							width={500}
-							client:load
 						/>
 					</div>
 					<div>
 						<h6 class="mb-2 text-center text-lg font-bold">
 							Oficinas Algarrobal
 						</h6>
-						<Image
+						<img
 							src={baseUrl + "foto-arga-entrada.jpg"}
 							alt="Algarrobal"
 							width={500}
-							client:load
 						/>
 					</div>
 				</div>
 			</section>
+			<Presupuestador client:load />
+
+			<!-- icono flotante de wp -->
 			<div class="fixed bottom-5 right-5 z-10">
 				<Whatsapp />
 			</div>

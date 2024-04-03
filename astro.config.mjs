@@ -7,5 +7,5 @@ export default defineConfig({
   integrations: [tailwind(), react()],
   site: 'https://joaco-basile.github.io',
   base: 'ladrillera-basile',
-  trailingSlash: "always"
+  trailingSlash: "always",
 });
