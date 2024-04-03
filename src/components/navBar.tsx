@@ -27,7 +27,7 @@ export default function NavBar() {
           className="md:hidden text-white"
         />
         <NavbarBrand>
-          <img src={baseUrl + "logo.png"} className="h-10 lg:h-16" />
+          <img src={baseUrl + "logo.png"} alt="logo" className="h-10 lg:h-16" />
         </NavbarBrand>
       </NavbarContent>
 
@@ -49,12 +49,12 @@ export default function NavBar() {
         </NavbarItem>
         <NavbarItem>
           <a href="http://www.instagram.com/ladrillerabasile/" target="_blank">
-            <img src={baseUrl + "instagramIcon.png"} alt="icon" width={20} />
+            <img src={baseUrl + "instagramIcon.png"} alt="icon" width={20} height={20} />
           </a>
         </NavbarItem>
         <NavbarItem>
-          <a href="http://www.facebook.com/ladrillerabasile" target="_blank">
-            <img src={baseUrl + "facebookIcon.png"} alt="icon" width={18} />
+          <a href="https://www.facebook.com/profile.php?id=61557054188957" target="_blank">
+            <img src={baseUrl + "facebookIcon.png"} alt="icon" width={18} height={18} />
           </a>
         </NavbarItem>
       </NavbarContent>
