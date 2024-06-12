@@ -14,3 +14,7 @@ export async function CalcDistancia(user_cor: string) {
   const distance = data.routes[0].distance / 1000
   console.log(distance);
 }
+
+export function CalCostoEnvio() {
+
+}

@@ -1,11 +1,11 @@
 ---
-import Carrusel from "../components/carrusel.astro";
+import Carrusel from "../components/Carrusel.astro";
 import ProductsCard from "../components/ProductsCard.astro";
 import NavBar from "../components/navBar";
 import Whatsapp from "../components/whatsapContact.astro";
-import Presupuestador from "../components/presupuestador";
 
 const baseUrl = import.meta.env.BASE_URL;
+const API_KEY = process.env.MAPS_KEY;
 ---
 
 <html lang="en">
@@ -17,8 +17,10 @@ const baseUrl = import.meta.env.BASE_URL;
 			name="description"
 			content="Años de experencia en la venta de material para la contruccion, principales vendedores de ladrillo en mendoza"
 		/>
+
 		<meta name="keywords" content="mendoza, ladrillos, empresa, envios" />
 		<meta name="generator" content={Astro.generator} />
+
 		<title>Ladrillera Basile</title>
 	</head>
 	<body>
@@ -92,10 +94,48 @@ const baseUrl = import.meta.env.BASE_URL;
 					</div>
 				</div>
 			</section>
-			<Presupuestador client:load />
-
+			<script>
+				((g) => {
+					var h,
+						a,
+						k,
+						p = "The Google Maps JavaScript API",
+						c = "google",
+						l = "importLibrary",
+						q = "__ib__",
+						m = document,
+						b = window;
+					b = b[c] || (b[c] = {});
+					var d = b.maps || (b.maps = {}),
+						r = new Set(),
+						e = new URLSearchParams(),
+						u = () =>
+							h ||
+							(h = new Promise(async (f, n) => {
+								await (a = m.createElement("script"));
+								e.set("libraries", [...r] + "");
+								for (k in g)
+									e.set(
+										k.replace(/[A-Z]/g, (t) => "_" + t[0].toLowerCase()),
+										g[k],
+									);
+								e.set("callback", c + ".maps." + q);
+								a.src = `https://maps.${c}apis.com/maps/api/js?` + e;
+								d[q] = f;
+								a.onerror = () => (h = n(Error(p + " could not load.")));
+								a.nonce = m.querySelector("script[nonce]")?.nonce || "";
+								m.head.append(a);
+							}));
+					d[l]
+						? console.warn(p + " only loads once. Ignoring:", g)
+						: (d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)));
+				})({ key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly" });
+			</script>
 			<!-- icono flotante de wp -->
-			<div class="fixed bottom-5 right-5 z-10">
+			<div class="fixed
+				bottom-5
+				right-5
+				z-10">
 				<Whatsapp />
 			</div>
 		</main>
